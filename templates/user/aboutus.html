@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+Techpile Technology - Best Summer Training
+{% endblock %}
+{% block content %}
+<style>
+    .underline::after{
+    content:"";
+    height:2.5px;
+    width:120px;
+    display:block;
+    background:#ffc107;
+    margin:8px auto;
+    }
+      .u2::after{
+    content:"";
+    height:2.5px;
+    width:100px;
+    display:block;
+    background:#ffc107;
+
+    }
+    </style>
+<div class="row bg-light">
+    <div class="text-center pt-4"><h3 class="underline">About Our <span class="text-warning">Company</span> </h3>
+    <p>There are multiple reasons to choose us for multiple purpose related to you IT. Believe me you <br> will find us best suitable.</p></div>
+    <div class="col-sm-10 mb-5 mx-auto p-4" style="background:white">
+        <div class="row">
+            <div class="col-md-6 my-3">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/rJa3FJc5Z1g" title="A glimpse of Apprenticeship 2022 | Apprenticeship is 100% Job Oriented Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="fs-4 u2 mt-2 mb-3">Welcome to  the Techpile, just here is some little word to describe our work scope.</div>
+                <p>Techpile is founded by some young engineers who have mastered the IT sector, whose objective is to achieve the highest position in the IT sector across the country, who are trying to achieve this objective by cooperating in various fields.</p>
+                <p>Techpile is an organization working in both software development and software training, which aims to make all the specials of it's client successful through their coding as well as to make students more competent to work with a well reputed organization.</p>
+                <a href="/contact/"><button class="btn btn-outline-warning px-4 py-2">CONTACT US</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="row  " style="background:white;">
+    <div class="text-center py-5"><h3 class="underline">Our <span class="text-warning">Certification</span> </h3>
+    <p>We are authorised By Ministry of Corporate Affairs and ISO.</p></div>
+    <div class="col-sm-10  mx-auto">
+        <div class="row">
+            <div class="col-md-6 pb-5 px-5">
+                <div class="row">
+                    <div class="col-sm-12 text-center"><p>Ministry of Corporate Affairs</p>
+                    <img src="{% static 'images/certi2.jpg'%}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pb-5 px-5">
+                <div class="row">
+                    <div class="col-sm-12 text-center"><p>ISO Registration</p>
+                     <img src="{% static 'images/certi1.jpg'%}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    <div class="text-center pt-5 pb-4"><h3 class="underline">We <span class="text-warning">Believe</span> </h3>
+    <p>We Believe to make IT Industry more reliable to people.</p></div>
+    <div class="col-xl-6 col-lg-8 col-md-10 col-sm-10 px-4 mx-auto ">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="u2 pb-3"><h4>Our Vision</h4></div>
+            <p>
+                Our Vision is to be a leading Web Solution company in IT sector and progress in our current position in market. We know that Customer's growth is our growth, so we commit our customers to help in achieving their business goals. We believe in work with the accuracy and best quality.
+            </p>
+        </div>
+        <div class="col-sm-12">
+        <div class="u2 pb-3"><h4>Our Mission</h4></div>
+        <p>Our mission is to enhance the business growth of our customers with creative Design and Development to deliver market-defining high-quality solutions that create value and reliable competitive advantage for our clients around the world.</p>
+            </div>
+        <div class="col-sm-12">
+        <div class="u2 pb-3"><h4>Our Work Scope</h4></div>
+        <p>
+            Our mission is to deliver optimal solutions with quality and services at reasonable prices. For us customer satisfaction is given top place. We are very friendly in our dealings to the customers and it helps us retain existing clients and expand customer circle. We always try to improve the quality of our products by exploring innovative ideas.
+        </p>
+            </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}

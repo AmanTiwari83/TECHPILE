@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/all.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/bootstrap.bundle.js'%}"></script>
+    <link href="{% static 'images/icon.png'%}" rel="icon">
+</head>
+<style>
+    .menu{
+    font-size:14px;
+    }
+    .nav-link:hover{
+        color: #ffc107;
+        border-color: #ffc107;
+        border-style: solid;
+        box-sizing: border-box;
+    }
+    .m{
+       animation-name: side;
+       animation-duration: 3s;
+       animation-fill-mode: forwards;
+       animation-play-state: running;
+       animation-timing-function: ease-in-out;
+       animation-iteration-count: infinite;
+       transition:all ease-in 5s !important;
+       animation-delay: 1s ;
+    }
+    @keyframes side {
+        0%{
+            background: black;
+            color: white;
+        }
+        100%{
+            background: green;
+            transition: all ease-out 5s !important;
+        }
+    }
+    .footer{
+    min-height:200px;
+
+    }
+    .footimg{
+    height:70px;
+    width:230px;
+    margin:2%;
+    }
+    .uline::after{
+    content:"";
+    margin-top:3px;
+    height:3px;
+    width:83px;
+    display:block;
+    background:white;
+    }
+</style>
+
+<body style="overflow-x:hidden;">
+    <div class="container-fluid">
+        <div class="row bg-light">
+            <div class="col-md-4 px-2 text-center"><i class="fa-solid fa-envelope"></i> amantiwari30222@gmail.com
+            , nikita123@gmail.com</div>
+            <div class="col-md-4 px-4 text-center"><i class="fa-solid fa-phone"></i>+91 8303362534 , +91 9696607898</div>
+            <div class="col-md-4 px-5 text-center">
+                <i class="fa-brands fa-square fa-facebook  mx-3"></i>
+                <i class="fa-brands fa-square fa-instagram mx-3"></i>
+                <i class="fa-brands fa-square fa-twitter mx-3"></i>
+                <i class="fa-brands fa-square fa-linkedin mx-3"></i>
+            </div>
+        </div>
+        <div class="row  sticky sticky-top" style=" box-shadow:2px 2px 2px gray;">
+            <div class="col-4 p text-center">
+                <img src="https://www.techpile.in/Content/img/logo.png" class="img-fluid  ml-5 pt-2"
+                    style="height:55PX;">
+            </div>
+            <div class="col-8 menu">
+                <!-- Start Menu -->
+                <nav class="navbar navbar-expand-lg  text-justify text-uppercase" >
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation" style="margin-left:51%; background:black; color:white;">
+                            <i class="fa-solid fa-bars py-2" style="color: #fcfcfc;"></i><span >MENU</span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/"><i class="fa-solid fa-home"></i>  HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/aboutus/"><i class="fa-solid fa-circle-info"></i> About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/register/"><i class="fa-solid fa-user-plus"></i> Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/course/"><i class="fa-solid fa-book"></i> Courses</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                         <i class="fa fa-fire"></i> Training
+                                    </a>
+                                    <ul class="dropdown-menu" style="font-size:14px;">
+                                        <li><a class="dropdown-item" href="/apprenticeship/"> APPRENTICESHIP TRAINING</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/summer/">SUMMER TRAINING</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/winter/">WINTER TRAINING</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/industrial/">INDUSTRIAL TRAINING</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/syllabus/">SYLLABUS TRAINING</a></li>
+                                     </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/placement/"><i class="fa-solid fa-graduation-cap"></i> Placement</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                         <i class="fa fa-images"></i> GALLERY
+                                    </a>
+                                    <ul class="dropdown-menu" style="font-size:14px;">
+                                        <li><a class="dropdown-item" href="/image/"><i class="fa fa-images"></i> IMAGE GALLERY</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/video/"><i class="fa fa-images"></i> VIDEO GALLERY</a></li>
+                                    </ul>
+                                <li></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact/"><i class="fa-solid fa-location-dot"></i> Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/feedback/"><i class="fa-solid fa-message"></i> Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Menu -->
+            </div>
+        </div>
+    </div>
+        </div>
+    {% block content %}
+    {% endblock %}
+
+    <a href="/register/">
+            <div class="m" style="position: fixed;  right:0%; top:28%; margin:2% 0% ; background:black;  padding :5px 2px; color:white; writing-mode:vertical-lr">
+             <i class="fa-solid fa-users fa-rotate-90"></i>  REGISTER</div>
+        </a>
+        <div class="m" style="position: fixed; right:0%; top:45%; margin:1% 0% ; background:black; padding :5px 2px;  color:white; writing-mode:vertical-lr">
+            <i class="fa-solid fa-book fa-rotate-90"></i> LOGIN</div>
+        <a href="/contact/">
+            <div class="m" style="position: fixed; right:0%; top:59%; margin:0% 0% ; background:black; padding:5px 2px ;  color:white; writing-mode:vertical-lr">
+            <i class="fa-solid fa-location-dot fa-rotate-90"></i> CONTACT US</div>
+        </a>
+
+ <div class="container-fluid">
+    <div class="row bg-dark text-light">
+        <div class="col-sm-10 py-5 mx-auto">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-justify px-5  footer">
+                    <img src="{% static 'images/gem.png'%}" class="footimg">
+                    <img src="{% static 'images/start.png'%}" class="footimg">
+                    <img src="{% static 'images/google.png'%}" class="footimg">
+                </div>
+                <div class="col-lg-4 px-5 pt-2 text-justify col-md-12 footer">
+                    <h4 class="uline">Contact Address</h4>
+                    <p class="mt-3 ">
+                        <i class="fa-solid fa-house text-warning"></i>
+                        Plot No-43, Behind H.P Petrol Pump,<br>
+                        Tedhi Pulia Ring Road, Sector-5,<br>
+                        Vikash Nagar, Lucknow<br>
+                        Uttar Pradesh 220622
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone" ></i>  <a href="#" style="text-decoration:none; color:white;"> +91-7007237006</a><br>
+                        <i class="fa-solid fa-phone my-2"></i> <a href="callto +91 :8303362534" style="text-decoration:none; color:white;"> +91-8052978684</a><br>
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto: www.techpilelko@gmail.com" style="text-decoration:none; color:white;"> techpilelko@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 px-5 pt-2 col-md-12 mx-auto text-justify footer">
+                    <div>
+                        <img src="https://www.techpile.in/Content/img/whitelogopng.png" class="img-fluid  ml-5 pt-2"
+                    style="height:55PX;">
+                    </div>
+                    <p class="mt-3 text-start">Techpile is an organization woking in both Software
+                    Development and Software Training which aims to
+                    make all its clients feel special and help them to
+                    become successfull.</p>
+                    <h5 class="uline">Stay Connected</h5>
+                    <h6 class="mt-4">
+                        <i class="fa-brands fa-square fa-facebook  mr-3"></i>
+                        <i class="fa-brands fa-square fa-instagram mx-3"></i>
+                        <i class="fa-brands fa-square fa-twitter mx-3"></i>
+                        <i class="fa-brands fa-square fa-whatsapp mx-3"></i>
+                        <i class="fa-brands fa-square fa-youtube mx-3"></i>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="row" style="height:10px; background:black;"></div>
+
+         <div class="row bg-dark  text-light">
+         <div class="col-md-9"> &COPY; &nbsp; &nbsp;2018&nbsp;&nbsp;   <A href="https://www.techpile.in/about-us" target="_blank" class="text-warning" style="text-decoration:none;">Techpile Technology </A> &nbsp;2018 &nbsp;&nbsp;| &nbsp;&nbsp;Developed &nbsp; By &nbsp; <a href="#" style="text-decoration:none;" class="text-warning"> Aman Tiwari </a> </div>
+         <div  class=" col-md-3 text-warning text-center" ><a href="/policy/" style="text-decoration:none" class="text-warning">Privacy and Policy</a> </div>
+     </div>
+         </div>
+
+</body>
+
+</html>

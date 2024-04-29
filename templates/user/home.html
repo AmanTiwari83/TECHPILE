@@ -1,0 +1,221 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+Techpile Technology - Best Summer Training
+{% endblock %}
+{% block content %}
+<div class="row">
+            <div class="col-sm-12 slider" style="background:#66a3d1; max-height:600px;">
+                <!-- Start Slider -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height:95%;">
+                            <img src="{% static 'images/iphone.png'%}"   style="min-height:287px !important; max-height:750px !important; margin:0px auto !important;" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item text-center" style="height:80%;">
+                            <img src="{% static 'images/slider2.png'%}"  style="min-height:287px !important; max-height:600px !important; margin:0px auto !important;" class="d-block w-100  img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slider -->
+            </div>
+        </div>
+<style>
+    .slider {
+       max-height: 600px;
+       overflow: hidden;
+   }
+    .active{
+       color: #ffc107 !important;
+   }
+   .img {
+       padding-top: 4%;
+       max-height: 800px;
+   }
+
+   .a::after {
+       content: "";
+       height: 3px;
+       width: 100px;
+       background-color: #ffc107;
+       position: relative;
+       top: 10px;
+       margin: 0PX auto;
+       display: block;
+   }
+   .box {
+       border: 2px solid inset;
+       color: white;
+       mAX-height: 150px;
+       max-width: 150px;
+       margin: 2% 2.1%;
+       border-radius: 5%;
+       box-sizing: border-box;
+       padding: 5px;
+       transition: all ease-in .3s;
+   }
+   .box:hover{
+       transform: scale(1.1);
+       transition: all ease-out .5s;
+       background-color: white !important;
+   }
+
+   .boxhead{
+
+       text-align: center  ;
+       border: 2px solid white;
+       border-radius: 5%;
+       padding:31% 0px;
+       transition: all ease-in .3s;
+   }
+   .boxhead:hover{
+       color: black;
+       transition: all ease-out .5s;
+       background-color: white;
+       border: 2px solid black;
+   }
+   .b2{
+   min-height:150px;
+   color:black;
+   max-width:350px;
+   box-sizing:border-box;
+   margin:20px auto !important;
+   background:white;
+   border:1px solid #ffc107;
+    transition: all ease 1s;
+
+   }
+   .b2:hover{
+   transform:scale(1.1);
+   transition: all ease 1s;
+   color:#ffc107;
+   box-shadow: 5px 5px 1.5px gray;
+   background-image: linear-gradient(0deg, #fff, #ffffffe0), url('{% static 'images/hover.webp'%}');
+   background-attachment: fixed;
+   background-size: 200%;
+   transform: scale(1.05);
+   }
+   .tfoot{
+   min-height:420px;
+   background:fixed;
+   background-image: linear-gradient(0deg, #000b, #000b), url('{% static 'images/background.jpg'%}');
+   overflow:hidden;
+   }
+   .underline::after{
+   content:"";
+   height:2.5px;
+   width:120px;
+   display:block;
+   background:#ffc107;
+   margin:8px auto;
+   }
+</style>
+
+        <div class="row bg-light" >
+            <div class="col-sm-12 text-center mt-4">
+                <h3 class="a">Traning at <span class="text-warning">Techpile</span>
+                </h3>
+                <h6 class="text-center pt-3 text-capitalize">Enter as Trainess , Exit As Professionals</h6>
+            </div>
+            <div class="col-lg-12 my-3">
+                <div class="row "  style="padding: 0% 9%;">
+                     <div class="col-xl-2 mx-auto   col-md-3 col-sm-6 box bg-primary"><a href="/summer/" style="text-decoration:none; color:white;"><p class="boxhead">SUMMER TRAINING</p></a></div>
+                     <div class="col-xl-2 mx-auto  col-md-3 col-sm-6 box bg-success"><a href="winter/" style="text-decoration:none; color:white;"><p class="boxhead">WINTER <br> TRAINING</p></a></div>
+                     <div class="col-xl-2 mx-auto  col-md-3 col-sm-6 box bg-secondary"><a href="/apprenticeship/" style="text-decoration:none; color:white;"><p class="boxhead">APPRENTICESHIP PROGRAM</p></a></div>
+                     <div class="col-xl-2 mx-auto  col-md-3 col-sm-6 box bg-warning"><a href="/syllabus/" style="text-decoration:none; color:white;"><p class="boxhead">SYLLABUS TRAINING</p></a></div>
+                     <div class="col-xl-2 mx-auto  col-md-6 col-sm-6 box bg-info"><a href="/industrial/" style="text-decoration:none; color:white;"><p class="boxhead">INDUSTRIAL TRAINING</p></a></div>
+                     <div class="col-xl-2 mx-auto col-lg-12 col-md-6 col-sm-6 box bg-dark"><a href="#" style="text-decoration:none; color:white;"><p class="boxhead">PD SKILL AND PROGRAM</p></a></div>
+                </div>
+            </div>
+            </div>
+<div class="col-sm-12 text-center mt-5">
+    <h3 class="a"><span class="text-warning"> Techpile</span> In Web Designing & Development</h3>
+    <div class="my-3 fs-6">Our services and designed to take your business to next level , reducing the gap between you <br>
+    and the heights of your success you wish to achieve.</div>
+</div>
+<div class="row my-4">
+    <div class="col-10 mx-auto">
+        <div class="row my-5">
+            <div class="col-lg-6 px-2 my-5 ">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/iAl2eSLQ5QE" title="Techpile Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-6">
+                  <span style="height:50px; line-height:50px; width:50px; background:#ffc107;   border-radius:50%; padding:10px 5px 8px 5px;"> <i class="fa-solid fa-code" style="color:white; font-size:25px; "></i></span>
+                  <span class="fs-4">Best in   Web Development</span>
+                <p class="mx-5"  style="font-size:15px;">Websites have become a basic requirements for every business today. At techpile we
+                offer website design and Development services which will play a pivotal role in your
+                success on the internet by building a superior website for your company.</p>
+                <span style="height:50px; line-height:50px; width:50px; background:#ffc107;   border-radius:50%; padding:10px ;"><i class="fa-solid fa-desktop" style="color:white; font-size:20px; "></i></span>
+                  <span class="fs-4"> Software And ERP Solutions</span>
+                <p class="mx-5"  style="font-size:15px;">Websites have become a basic requirements for every business today. At techpile we
+                offer website design and Development services which will play a pivotal role in your
+                success on the internet by building a superior website for your company.</p>
+               <span style="height:50px; line-height:50px; width:50px; background:#ffc107;   border-radius:50%; padding:10px;s"> <i class="fa-solid fa-layer-group" style="color: #fafcff; font-size:20px; "></i></span>
+                  <span class="fs-4"> Domain & Hosting Services</span>
+                <p class="mx-5" style="font-size:15px;">Websites have become a basic requirements for every business today. At techpile we
+                offer website design and Development services which will play a pivotal role in your
+                success on the internet by building a superior website for your company.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="background-color: #f8f9fa;">
+    <h3 class="text-center a my-3">Amazing <span class="text-warning">Training </span> Program</h3>
+    <div class="fs-6 my-3 text-center">We are much appriciated in the field of Training as well. Techpile offer the best Training <Br>development via experienced consultant.</div>
+    <div class="col-sm-12 my-4 mx-auto" style="padding:0px  10% !important">
+        <div class="row mx-auto" style="margin:0px auto;">
+            <div class="col-xl-4 mx-1 px-3 col-md-5 col-sm-10 mx-auto  b2">
+                <div  style="height:50px; line-height:50px; width:50px; background:#ffc107; color:white;   border-radius:50%; padding:1px 12px; font-size:22px; position:relative; top:-25px;"><i class="fa-solid fa-desktop"></i></div>
+                <DIV class="fs-5" style="transform:translateY(-12px);"> Industrial Training (45-60 Days)</DIV>
+                <div class="fs-6 text-dark">Techpile offers you an appreciated training program with an objective to enhance the knowledge of the student on the different cutting edge technologies for the <b>B.Tech(CS/IT),BCA,MCA</b> students.</div>
+                <a href="/industrial/"> <button class="btn btn-outline-warning P-5 my-3">KNOW MORE</button></a>
+            </div>
+           <div class="col-xl-4 mx-1 px-3 col-md-5 col-sm-10 mx-auto  b2">
+                <div  style="height:50px; line-height:50px; width:50px; background:#ffc107; color:white;   border-radius:50%; padding:1px 15px; font-size:22px; position:relative; top:-25px;"><i class="fa fa-gavel"></i></div>
+                <DIV class="fs-5  " style="transform:translateY(-12px);"> Vocational Training (45-60 Days)</DIV>
+                <div class="fs-6 text-dark">Techpiles offers you an amazing Vocational Training program to make you expect in your field, which is a live project based training. Students related to the <b>Diploma(CS/IT), PGDCA </b>can join this program.</div>
+                <a href="/winter/"> <button class="btn btn-outline-warning P-5 my-3">KNOW MORE</button></a>
+            </div>
+            <div class="col-xl-4 mx-1 px-3 col-md-5 col-sm-10  b2" >
+                <div  style="height:50px; line-height:50px; width:50px; background:#ffc107; color:white;   border-radius:50%; padding:1px 12px; font-size:22px; position:relative; top:-25px;"><i class="fa fa-code"></i></div>
+                <DIV class="fs-5  " style="transform:translateY(-12px);"> Summer Training (45-60 Days)</DIV>
+                <div class="fs-6 text-dark">This Summer Training program is designed to Teach, Guide and Enrich students to become for the corporate. Students related to the <b> B.Tech(CS/IT), PGDCA, Diploma(CS/IT), BCA, MCA </b>can join this program , Techpile provides Best Summer Training in lucknow.</div>
+                <a href="/summer/"> <button class="btn btn-outline-warning P-5 my-3">KNOW MORE</button></a>
+            </div>
+
+            <div class="col-xl-4 mx-1 px-3 col-md-5 col-sm-10 mx-auto  b2">
+                <div  style="height:50px; line-height:50px; width:50px; background:#ffc107; color:white;   border-radius:50%; padding:1px 12px; font-size:22px; position:relative; top:-25px;"><i class="fa fa-coffee"></i></div>
+                <DIV class="fs-5  " style="transform:translateY(-12px);"> Apprenticeship (6 Month)</DIV>
+                <div class="fs-6 text-dark">Techpile offers you apprenticeship program with experienced consultants who would like to take a step with you towards your success and make you capable to work with a reputed organisation. Offered for the all passed-out students of <b> B.Tech(CS/IT), PGDCA, Diploma(CS/IT), BCA, MCA </b></div>
+                <a href="/apprenticeship/"> <button class="btn btn-outline-warning P-5 my-3">KNOW MORE</button></a>
+            </div>
+            <div class="col-xl-4 mx-1 px-3 col-md-5 col-sm-10 mx-auto  b2">
+                <div  style="height:50px; line-height:50px; width:50px; background:#ffc107; color:white;   border-radius:50%; padding:1px 17px; font-size:22px; position:relative; top:-25px;"><i class="fa fa-mobile"></i></div>
+                <DIV class="fs-5  " style="transform:translateY(-12px);"> Syllabus Training (30 Days)</DIV>
+                <div class="fs-6 text-dark">Techpile helps you to let you know something more intersting about technical subjects of your syllabus by the help of which you ncan be able to grasp the practical and empirical meaning of the subjects. Subjects related to the <b> B.Tech(CS/IT), PGDCA, Diploma(CS/IT), BCA, MCA </b> can join this program.</div>
+                <a href="/syllabus/"> <button class="btn btn-outline-warning P-5 my-3">KNOW MORE</button></a>
+            </div>
+            <div class="col-xl-4 mx-1 px-3 col-md-5 col-sm-10 mx-auto  b2">
+                <div  style="height:50px; line-height:50px; width:50px; background:#ffc107; color:white;   border-radius:50%; padding:1px 14px; font-size:22px; position:relative; top:-25px;"><i class="fa fa-adjust"></i></div>
+                <DIV class="fs-5  " style="transform:translateY(-12px);"> PD & Skills Development (30 Days)</DIV>
+                <div class="fs-6  text-dark">Techpile offers a session of personality development which helps you get to the positive thought patterns, gain, confidence, improve behavior, learn better, communication and develops a healthy physique. Interested candidates are most welcome to participate the program.</div>
+                <button class="btn btn-outline-warning P-5 my-3">KNOW MORE</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row tfoot">
+    <div class="col-md-10 pt-4 mx-auto">
+        <div class="row">
+            <div class="col-md-6 text-center p-5 text-light"><h3 class="mt-5">Also Available On Google Play Store</h3>
+            <h3 class="text-warning underline mb-3">Techpile Learning App</h3>
+            <img src="{% static 'images/Playstore.png'%}" style="height:70px;">
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="{% static 'images/phone.png'%}" style="height:400px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

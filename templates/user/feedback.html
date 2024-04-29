@@ -1,0 +1,67 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+Techpile Technology - Best Summer
+{% endblock %}
+{% block content %}
+<style>
+    .underline::after{
+    content:"";
+    height:2.5px;
+    width:120px;
+    display:block;
+    background:#ffc107;
+    margin:8px auto;
+    }
+    .u2::after{
+    content:"";
+    height:2.5px;
+    width:100px;
+    display:block;
+    background:#ffc107;
+
+    }
+    .form-control{
+    margin-bottom:4%;
+    }
+    textarea::placeholder{
+    color:black;
+    }
+</style>
+<div class="container-fluid bg-light py-3 pb-5">
+    <div class="text-center py-3"><h3 class="underline">Your Valuable <span class="text-warning">Feedback</span> </h3>
+    <p>We appreceiate to your valuable feedback and we are always focused on it.</p></div>
+    <div class="col-sm-10 p-5 mx-auto" style="background:white;">
+        <div class="row">
+            <div class="col-md-6 ">
+                <img src="{% static 'images/feed.jpg'%}" style="height:80%; width:100%;" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="fs-4 mb-3 "><span class="u2">Add Your Feedback</span></div>
+                <div class="row mt-4 my-3">
+                    <div class="col-md-6 ">
+                        <label for="aman">Your Name</label>
+                        <input type="text" id="aman" required placeholder="Enter Your Name" class="form-control" name="name">
+                    </div>
+                    <div class="col-md-6">
+                        Your Image
+                        <input type="file" required name="picture" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    You're From
+                    <input type="text" required placeholder="Enter Your College/Institute Name" name="college" class="form-control">
+                </div>
+                <div class="col-sm-12">
+                    Your Feedback
+                   <textarea placeholder="Your Valuable Feedback" rows="4" class="form-control" name="feedback" style="resize:none;"></textarea>
+                </div>
+                <input type="submit" value="SEND FEEDBACK" class="btn btn-outline-warning mt-2  px-4 py-2" style="">
+           </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

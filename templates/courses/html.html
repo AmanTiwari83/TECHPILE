@@ -1,0 +1,206 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+Techpile Technology - Best Summer Training
+{% endblock %}
+{% block content %}
+<style>
+    .underline::after{
+    content:"";
+    height:2.5px;
+    width:120px;
+    display:block;
+    background:#ffc107;
+    margin:8px auto;
+    }
+    .img{
+    background-image:url('images/python.png');
+    }
+    .a{
+    position:relative;
+    top:-45px;
+    }
+     .u::after{
+    content:"";
+    height:2.5px;
+    width:60px;
+    display:block;
+    background:#ffc107;
+    }
+    .lc li{
+    margin-bottom:3%;
+    color:black;
+    transition:all ease .5s;
+    }
+    .lc li:hover{
+    background:lightgray;
+    color:#ffc107;
+    word-spacing:5px;
+    transition:all ease .5s;
+    }
+    .course{
+    transition:all ease-in-out .5s;
+    }
+    .course:hover{
+    transform:scale(1.1);
+    transition:all ease-in-out .5s;
+    box-shadow:2px 3px 5px gray;
+    background:#ffc107;
+    color:white !important;
+    }
+</style>
+<DIV CLASS="row pt-4">
+    <div class="text-center">
+        <h3 class="underline"><span CLASS="text-warning">HTML </span>Details </h3>
+        <P style="text-justify; max-width:600px; margin:0px auto; padding:0px 20px 0px 20px;">
+            HTML is stands for Hyper Text Markup Language. Html is the body structure of a web page. Html is developed by Tim Burners Lie.
+    </P>
+    </div>
+    <div class="col-sm-10 mx-auto">
+        <div class="row px-3">
+            <div class="col-md-9 pt-5 px-5">
+                <div class="col-sm-12">
+                    <div class="card" style="border:none;">
+                        <img src="{% static 'images/html.png'%}" class="img-fluid">
+
+                    <div class="card-body p-1 a">
+                        <div class="row">
+                            <div class="col-6">
+                                 <a href="#" style="text-decoration:none;">
+                                     <button class="btn btn-warning px-3 py-2 text-light"  STYLE="font-size:12px;"><SPAN STYLE="font-weight:bold;">CORE</SPAN> TECHNOLOGY
+                                     </button>
+                                 </a>
+                            </div>
+                            <div class="col-6 text-end">
+                                <a href="/contact/" style="text-decoration:none;">
+                                    <button class="btn btn-warning text-light px-3 py-2" STYLE="font-size:12px;  font-weight:bold;">GET ENROLL
+                                    </button>
+                                </a>
+                            </div>
+                            </div>
+                             <DIV CLASS="col-sm-12 py-2">
+                                <div class="fs-3 u">
+                                    HTML
+                                </div>
+                                 <div class="fs-6 py-2">HTML is stands for Hyper Text Markup Language. Html is the body structure of a web page. Html is developed by Tim Burners Lie.</div>
+                             </DIV>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="col-sm-12 py-3">
+                    <div class="fs-3 text-dark">Latest Course</div>
+                    <ul type="none" class="fs-6 px-4 pt-2 lc text-dark" style="font-weight:bold; ">
+                        <a href="/android/" style="text-decoration:none; color:black;"><li class="lc"><img src="{% static 'images/and.png'%}" style="max-width:20px; ">  &nbsp;ANDROID</li></a>
+                        <a href="/python/" style="text-decoration:none; color:black;"><li class="lc"> <img src="{% static 'images/py.png'%}" style="max-width:20px;">  &nbsp; PYTHON</li></a>
+                        <a href="/html/" style="text-decoration:none; color:black;"> <li class="lc"><img src="{% static 'images/html1.png'%}" style="max-width:20px;">  &nbsp;HTML 5</li></a>
+                        <a href="/css/" style="text-decoration:none; color:black;"> <li class="lc"><img src="{% static 'images/css1.png'%}" style="max-width:20px;">  &nbsp;CSS 3</li></a>
+                        <a href="/c/" style="text-decoration:none; color:black;"> <li class="lc"><img src="{% static 'images/c1.png'%}" style="max-width:20px;">  &nbsp;C PROGRAMMING</li></a>
+                       <a href="/net/" style="text-decoration:none; color:black;"> <li class="lc"><img src="{% static 'images/net.png'%}" style="max-width:20px;">  &nbsp;.NET</li></a>
+                        <a href="/php/" style="text-decoration:none; color:black;"> <li class="lc"><img src="{% static 'images/php1.png'%}" style="max-width:20px;">  &nbsp;php</li></a>
+                       <a href="/java/" style="text-decoration:none; color:black;"> <li class="lc"><img src="{% static 'images/js.png'%}" style="max-width:20px;">  &nbsp;JAVA SCRIPT</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</DIV>
+<div class="row bg-light p-4">
+    <div class="text-center"><h3 class="underline">Related <span class="text-warning">Courses</span> </h3>
+    <p>We Believe  To Make IT Industry More Reliable For People.</p></div>
+    <div class="col-md-10 mx-auto">
+        <div class="row">
+            <div class="col-xl-10 col-lg-12 mx-auto p-3">
+        <div class="row py-2">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2">
+                <div class="row p-3">
+                    <div class="col-sm-12">
+                        <a href="/python/" style="text-decoration:none;">
+                            <div class="card course text-warning">
+                            <img src="{% static 'images/python.png'%}" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h6 class="text-dark">PYTHON</h6>
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2">
+                <div class="row p-3">
+                    <div class="col-sm-12">
+                        <a href="/php/" style="text-decoration:none;">
+                            <div class="card course text-warning">
+                            <img src="{% static 'images/php.png'%}" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h6 class="text-dark">php</h6>
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2">
+                <div class="row p-3">
+                    <div class="col-sm-12">
+                        <a href="/java/" style="text-decoration:none;">
+                            <div class="card course text-warning">
+                            <img src="{% static 'images/js1.png'%}" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h6 class="text-dark">JAVA SCRIPT</h6>
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2">
+                <div class="row p-3">
+                    <div class="col-sm-12">
+                        <a href="/android/" style="text-decoration:none;">
+                            <div class="card course text-warning">
+                            <img src="{% static 'images/andriod.png'%}" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h6 class="text-dark">ANDROID</h6>
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

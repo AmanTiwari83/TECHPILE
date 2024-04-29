@@ -1,0 +1,58 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+Techpile Technology - Best Summer Training
+{% endblock %}
+{% block content %}
+<style>
+    .underline::after{
+    content:"";
+    height:2.5px;
+    width:120px;
+    display:block;
+    background:#ffc107;
+    margin:8px auto;
+    }
+    .course{
+    transition:all ease-in-out .5s;
+    }
+    .course:hover{
+    transform:scale(1.1);
+    transition:all ease-in-out .5s;
+    box-shadow:2px 3px 5px gray;
+    background:#ffc107;
+    color:white !important;
+    }
+</style>
+<div class="row p-4 bg-light">
+    <div class="text-center"><h3 class="underline">Our Popular <span class="text-warning">Courses</span> </h3>
+    <span class="text-capitalize">We believe in to make IT Industry more Reliable for people.</span></div>
+    <div class="col-xl-10 col-lg-12 mx-auto p-3">
+        <div class="row py-2">
+            {% for i in cdata %}
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2">
+                <div class="row p-3">
+                    <div class="col-sm-12">
+                        <a href="/{{ i.link }}/" style="text-decoration:none;">
+                            <div class="card course text-warning">
+                            <img src="/{{ i.picture }}" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h6 class="text-dark">{{ i.coursecategory }}</h6>
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+Techpile Technology - Best Summer Training
+{% endblock %}
+{% block content %}
+<style>
+    .uregister::after{
+    content:"";
+    height:2px;
+    width:120px;
+    display:block;
+    background:#ffc107;
+    margin:5px auto;
+    }
+    .a{
+    margin-bottom:2%;
+    }
+</style>
+<div class="row p-2" style="background-color: #f8f9fa;">
+<h3 class="text-center mt-3 uregister">Register <span class="text-warning">With Us</span> </h3>
+<div class="text-center px-4" ><p>You are just one step behind to join the Techpile. I promise you to give my best if you will be a<br> part of Techpile.</p></div>
+<div class="row">
+
+    <div class="col-xl-8 col-sm-12 my-4 mx-auto">
+        <div class="row">
+             <form method="post">
+        {% csrf_token %}
+            <div class="col-sm-12 px-3  mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        Enroll No:
+                        {% for i in rdata %}
+                        <div class="input-group">
+                            <i class="input-group-text"><i class="fa-solid fa-pencil"></i> </i>
+                            <input type="text" value="TPT-ST20{{ i.id }}" name="enroll" readonly class="form-control bg-light"></div>
+                    </div>
+
+                     <div class="col-md-6 px-3 mb-4">
+                         Today Is:
+                         <div class="input-group">
+                             <i class="input-group-text"><i class="fa-solid fa-calendar-days"></i> </i>
+                             <input type="text" name="date" required value="{{ i.date }}" readonly class="form-control bg-light">
+                         </div>
+                     </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-sm-12 px-3  mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        Name:
+                        <div class="input-group">
+                            <i class="input-group-text"><i class="fa-solid fa-user"></i> </i>
+                            <input type="text" name="name" required placeholder=" Username" class="form-control"></div>
+                    </div>
+                     <div class="col-md-6  mb-4">
+                         Apply For:
+                         <div class="input-group">
+                             <i class="input-group-text"><i class="fa-solid fa-pencil"></i></i>
+                             <select class="form-control" required name="apply">
+                                 <option>Select Your Course</option>
+                                  <option>Winter Training</option>
+                                  <option>Summer Training</option>
+                                 <option>Apprenticeship Training</option>
+                                 <option>Syllabus Training</option>
+                                 <option>Vocational Training</option>
+                             </select>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-sm-12 px-3  mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        College Name:
+                        <div class="input-group">
+                            <i class="input-group-text"><i class="fa-solid fa-building"></i> </i>
+                            <input type="text" name="college" required placeholder="" class="form-control"></div>
+                    </div>
+                     <div class="col-md-6 mb-4">
+                         Course:
+                         <div class="input-group">
+                             <i class="input-group-text"><i class="fa-solid fa-desktop"></i> </i>
+                             <select class="form-control" required name="course">
+                                 <option>Select Your Course</option>
+                                  <option>Diploma (CS)</option>
+                                 <OPTION>Diploma (IT)</OPTION>
+                                  <option>B.Tech(CS)</option>
+                                 <OPTION>B.Tech (IT)</OPTION>
+                                 <option>PGDCA</option>
+                                 <option>BCA</option>
+
+                             </select>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-sm-12 px-3  mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        Year:
+                        <div class="input-group">
+                            <i class="input-group-text"><i class="fa-regular fa-clock"></i> </i>
+                            <SELECT  class="form-control" required name="year">
+                                <OPTION>Your Pursuing Year</OPTION>
+                                <option>First</option>
+                                <option>Second</option>
+                                <option>Third</option>
+                                <option>Fourth</option>
+                            </SELECT>
+                        </div>
+                    </div>
+                     <div class="col-md-6 mb-4">
+                         Contact No:
+                         <div class="input-group">
+                             <i class="input-group-text"><i class="fa-solid fa-phone fa-rotate-270"></i> </i>
+                             <input type="number" placeholder="Mobile No" required name="mobile" class="form-control">
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-sm-12 px-3  mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                         Email Id:
+                        <div class="input-group">
+                            <i class="input-group-text"><i class="fa-regular fa-envelope"></i> </i>
+                            <input type="email" name="email" required placeholder="Email Id" class="form-control"></div>
+                    </div>
+                     <div class="col-md-6 mb-4">
+                         Amount To Pay:
+                         <div class="input-group">
+                             <i class="input-group-text"><i class="fa-solid fa-indian-rupee-sign"></i> </i>
+                             <input type="number" placeholder="" name="amount" readonly class="form-control bg-light">
+                         </div>
+                     </div>
+                </div>
+            </div>
+                <div class="row px-3">
+                    <div class="col-sm-12">
+                        <input type="submit" value="Register" class="btn btn-warning text-white" style="width:180px; border-radius:0px;">
+                    </div>
+                </div>
+                 </form>
+        </div>
+    </div>
+
+</div>
+    </div>
+{% endblock %}
